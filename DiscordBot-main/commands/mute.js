@@ -7,7 +7,7 @@ module.exports = {
             const target = message.mentions.users.first();
             if (target) {
  
-                let muteRole = message.guild.roles.cache.find(role => role.name === 'Khuyết Tật Tạm Thời');
+                let muteRole = message.guild.roles.cache.find(role => role.name === 'khuyết tật tạm thời');
  
                 let memberTarget = message.guild.members.cache.get(target.id);
  

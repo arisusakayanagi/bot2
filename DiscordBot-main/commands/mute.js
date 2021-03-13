@@ -17,16 +17,16 @@ module.exports = {
                     return
                 }
                 memberTarget.roles.add(muteRole.id);
-                message.channel.send(`<@${memberTarget.user.id}> một buổi tan "chường" ${ms(ms(args[1]))}!`);
+                message.channel.send(`<@${memberTarget.user.id}> bị khóa "mõm" ${ms(ms(args[1]))}!`);
  
                 setTimeout(function () {
                     memberTarget.roles.remove(muteRole.id);
                 }, ms(args[1]));
             } 
             else {
-                message.channel.send('Ngài muốn "chưởng" đứa nào?');
+                message.channel.send('Em muốn chị "đuổi" đứa nào?');
             }
         }
-        else return message.reply('Không phải lệnh của chủ nhân, mày là ai cút ngay!?')
+        else return message.reply('Ara, ara, chụy đây chỉ làm vì Khang thôi!?')
     }
 }

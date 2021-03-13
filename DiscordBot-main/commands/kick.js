@@ -7,7 +7,7 @@ module.exports = {
             if(member){
                 const memberTarger = message.guild.members.cache.get(member.id);
                 memberTarger.kick();
-                message.channel.send(`Đã đạp ${memberTarger} đừng để chủ nhân thấy mặt ngươi nữa!`);
+                message.channel.send(`Đừng để tôi gặp lại tên rác rưởi ${memberTarger} này nữa!`);
             }
             else return message.reply("Không đạp được người này...");
         }

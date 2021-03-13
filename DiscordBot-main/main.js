@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const prefix = 'rias:';
+const prefix = 'a:';
 
 const fs = require('fs');
 
@@ -13,7 +13,7 @@ client.on("ready", () =>{
     client.user.setPresence({
         status: "online", 
         activity: {
-            name: "High School DxD",  
+            name: "Class 2A",  
             type: "WATCHING" 
         }
     });
@@ -27,7 +27,7 @@ for (const file  of commandFiles){
 }
 
 client.once('ready', () => {
-    console.log('RiasBot is online!');
+    console.log('Arisubot is online!');
 });
 
 client.on('message', message =>{

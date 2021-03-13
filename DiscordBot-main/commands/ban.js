@@ -7,7 +7,7 @@ module.exports = {
             if(member){
                 const memberTarger = message.guild.members.cache.get(member.id);
                 memberTarger.kick();
-                message.channel.send(`Một chảo 1 mạng! ${memberTarger} đã ra đi!`);
+                message.channel.send(`Tên rác rưởi ${memberTarger} đã bị đuổi học!`);
             }
             else return message.reply("Chảo này to đấy, nhưng không dùng được...");
         }
